@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>KS 跳转页面</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script language='javascript'>
+        function myFunction() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                //return "weixin";
+                mdui.alert('微信用户请点击右上角 “ … ” 点击 在浏览器打开 。', '提示');
+            } else if (ua.match(/QQ/i) == "qq") {
+                //return "QQ";
+                mdui.alert('QQ用户请点击右上角 “ + ” 找到 浏览器 按钮打开 。', '提示');
+            } else {
+                document.location = 'https://kurisu.run:8082'; // 请将此处的链接改成你的。
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="myFunction()">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <div class="mdui-container" style="margin: auto;">
+
+        <!--标题-->
+        <h1>Kurisu Blog</h1><br>
+        <div class="mdui-divider"></div>
+        <!--副标题-->
+        <h2>正在打开 Kurisu Blog</h2><br>
+
+        <div class="mdui-progress">
+            <div class="mdui-progress-indeterminate"></div>
+        </div>
+
+        <br>
+        <!--提示-->
+        <span>如果您仍滞留与此，请检查您的网络环境。或使用浏览器打开而非 QQ 、 WeChat 内置的浏览器 。</span><br><br>
+
+        <div class="mdui-divider"></div>
+        <br><br>
+        <!---->
+        <!--自定义-->
+
+
+        <div class="mdui-card">
+            <!-- 卡片的标题和副标题 -->
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">震惊！</div>
+                <div class="mdui-card-primary-subtitle">Kurisu Service 制作了页面跳转！网友：太惊讶了！</div>
+            </div>
+
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content">　　 Kurisu Service 编写了跳转页面是怎么回事呢？ Kurisu Service 相信大家都很熟悉，但是 Kurisu Service 编写了跳转页面是怎么回事呢，下面就让小编带大家一起了解吧。
+                　　 Kurisu Service 编写了跳转页面，其实就是 Kurisu Service 为了方便编写了跳转页面，大家可能会很惊讶 Kurisu Service 怎么会编写了跳转页面呢？但事实就是这样，小编也感到非常惊讶。
+                　　这就是关于 Kurisu Service 编写了跳转页面的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！</div>
+
+        </div>
+
+
+
+
+
+
+        <!--自定义-->
+        <!---->
+        <br><br>
+        <div class="mdui-divider"></div>
+
+        <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
+        <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+            href="https://github.com/kurisucn">Kurisu Service 强力驱动。<a></a>
+            <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+                href="https://github.com/kurisucat">©2020 Kurisu Cat<a>
+                    <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
+
+    </div>
+</body>
+
+</html>
