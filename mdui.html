@@ -1,26 +1,18 @@
 <html>
 
 <head>
-    <title>KS 跳转页面</title>
+    <title>统计页面</title>
     <!--标题请自定义-->
-
-    <!--MDUI CSS JS start-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-    <!--MDUI CSS JS end-->
 
     <!--核心代码 strat-->
     <script language='javascript'>
-        function myFunction() {
-            var ua = navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == "micromessenger") {
-                mdui.alert('微信用户请点击右上角 “ … ” 点击 在浏览器打开 。', '提示'); // 此处为在 微信 中的内置浏览器显示的内容，使用 MDUI 的 alert 。我为什么要这么做：因为腾讯有的时候会把你的链接封杀掉，为了防止这种现象，使用这种方式可能可以降低被封杀的风险。
-            } else if (ua.match(/QQ/i) == "qq") {
-                mdui.alert('QQ用户请点击右上角 “ + ” 找到 浏览器 按钮打开 。', '提示'); // 此处为在 QQ 中的内置浏览器显示的内容，使用 MDUI 的 alert 。我为什么要这么做：因为腾讯有的时候会把你的链接封杀掉，为了防止这种现象，使用这种方式可能可以降低被封杀的风险。
-            } else {
-                document.location = 'https://kurisu.run:8082'; // 请将此处的链接改成你的。
-            }
-        }
+        var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4b0b294d39e70dd46be83a9681742efc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
     </script>
     <!--核心代码 end-->
 
@@ -33,59 +25,7 @@
     <!--上面这行 meta 的目的是为了可以在手机上也可以有良好的观感，而不是看起来很小-->
 
 
-    <div class="mdui-container" style="margin: auto;">
-        <!--标题-->
-        <h1>Kurisu Blog</h1>
-        <div class="mdui-divider"></div>
-        <!--分割线-->
-        <!--副标题-->
-        <h2>正在打开 Kurisu Blog</h2>
 
-        <div class="mdui-progress">
-            <div class="mdui-progress-indeterminate"></div>
-        </div>
-
-        <br>
-        <!--提示-->
-        <span>如果您仍滞留与此，请检查您的网络环境。或使用浏览器打开而非 QQ 、 WeChat 内置的浏览器 。</span><br><br>
-
-        <div class="mdui-divider"></div>
-        <!--分割线-->
-        <br><br>
-        <!--start-->
-        <!--推荐自定义的区域-->
-
-        <!--MDUI 中的卡片 start-->
-        <div class="mdui-card">
-            <!-- 卡片的标题和副标题 -->
-            <div class="mdui-card-primary">
-                <div class="mdui-card-primary-title">标题</div>
-                <div class="mdui-card-primary-subtitle">副标题</div>
-            </div>
-            <!-- 卡片的内容 -->
-            <div class="mdui-card-content">　　 Kurisu Service 编写了跳转页面是怎么回事呢？ Kurisu Service 相信大家都很熟悉，但是 Kurisu Service
-                编写了跳转页面是怎么回事呢，下面就让小编带大家一起了解吧。
-                　　 Kurisu Service 编写了跳转页面，其实就是 Kurisu Service 为了方便编写了跳转页面，大家可能会很惊讶 Kurisu Service
-                怎么会编写了跳转页面呢？但事实就是这样，小编也感到非常惊讶。
-                　　这就是关于 Kurisu Service 编写了跳转页面的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！
-            </div>
-        </div>
-
-        <!--推荐自定义的区域-->
-        <!--end-->
-
-        <br><br>
-        <div class="mdui-divider"></div>
-        <!--分割线-->
-        <br><br>
-        <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
-        <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
-            href="https://github.com/kurisucn">Kurisu Service 强力驱动。<a></a>&nbsp;&nbsp;
-            <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
-                href="https://github.com/kurisucat">©2020 Kurisu Cat<a>
-                    <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
-
-    </div>
 </body>
 
 </html>
